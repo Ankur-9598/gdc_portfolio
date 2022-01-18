@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martial Art Game</title>
+    <style>
+        .heading {
+            text-align: center;
+            color: rebeccapurple;
+            font-size: 20px;
+        }
+        .canvas-container {
+            width: 1200px;
+            height: 500px;
+            margin: 0 auto;
+            background: url('./images/background.jpg');
+            background-size: 100% 100%;
+            border-radius: 12px;
+            box-shadow: 0px 0px 2px 1px rgb(241, 241, 241);
+        }
+        .btn-container {
+            width: 500px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: rgb(240, 240, 240);
+            border-radius: 12px;
+        }
+        .top, .bottom {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 20px 5px;
+        }
+        .btn {
+            border: none;
+            padding: 4px 8px;
+            border-radius: 4px;
+            background-color: rgb(190, 190, 190);
+        }
+        .btn:active {
+            outline: none;
+            border: none;
+            background-color: rgb(129, 129, 129);
+        }
+    </style>
+</head>
+<body>
+    <h3 class="heading">A Martial Art Game</h3>
+    <div class="canvas-container">
+        <canvas id="myCanvas" width="1200" height="500">
+            Your browser doesn't support the HTML5 canvas tag.
+        </canvas>
+    </div>
+    
+
+    <div class="btn-container">
+        <div class="top">
+            <button type="button" class="btn" id="kick">Kick <i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+        </div>
+        <div class="center">
+            <button type="button" class="btn" id="backward"><i class="fa fa-arrow-left" aria-hidden="true"></i> Backward</button>
+            <button type="button" class="btn" id="block">Block (Enter Key)</button>
+            <button type="button" class="btn" id="forward">Forward <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+        </div>
+        <div class="bottom">
+            <button type="button" class="btn" id="punch">Punch <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
+        </div>
+    </div>
+
+    <script src="https://use.fontawesome.com/b51b687ff6.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
